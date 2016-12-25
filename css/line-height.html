@@ -3,8 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>line-height</title>
+	<style type="text/css">
+		.test1{font-size:20px; line-height:0; border:1px solid #cccccc; background:#eeeeee;}
+		.test2{font-size:0; line-height:20px; border:1px solid #cccccc; background:#eeeeee;}
+		.mulit_line{line-height:150px; border:1px dashed #cccccc; padding-left:5px;}
+		.mulit_line span{display:inline-block; line-height:1.4em; vertical-align:middle;}
+		/*.mulit_line i{width:0;display:inline-block; vertical-align:middle; font-size:0;}*/
+	</style>
 </head>
 <body>
-	
+	<div class="test1">测试</div>
+	<div class="test2">测试</div>
+	<dl>
+		<dt>line-height属性知识点</dt>
+		<dd>
+			div的高度
+		</dd>
+	</dl>
+	<p class="mulit_line">
+	    <span >这里是高度为150像素的标签内的多行文字，文字大小为12像素。<br />这里是第二行，用来测试多行的显示效果。</span>
 </body>
 </html>
